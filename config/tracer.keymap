@@ -92,6 +92,11 @@
 	};
 };
 
+#define MIRYOKU_ALTERNATIVES_BASE_COLEMAKDH_FLIP \
+&kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
+&hm LGUI A,        &hm LALT R,        &hm LCTRL S,       &hm LSHFT T,       &kp G,             &kp M,             &hm LSHFT N,       &hm LCTRL E,       &hm LALT I,        &hm LGUI O,        \
+&lt BUTTON Z,      &hm RALT X,        &kp C,             &kp D,             &kp V,             &kp K,             &kp H,             &kp COMMA,         &hm RALT DOT,      &lt BUTTON SLASH,  \
+U_NP,              U_NP,              &lt FUN DEL,       &lt NUM BSPC,      &lt SYM RET,       &lt MOUSE TAB,     &lt NAV SPC,       &lt MEDIA ESC,     U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_NAV_INVERTEDT_FLIP \
 &kp PG_UP,         &kp HOME,          &kp UP,            &kp END,           &kp INS,           U_NA,              U_NA,              U_NA,              U_NA,              &bootloader,       \
