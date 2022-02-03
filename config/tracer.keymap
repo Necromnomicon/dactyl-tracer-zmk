@@ -3,11 +3,14 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define DEFAULT 0
-#define LOWER   1
-#define RAISE   2
-#define CONTROL 3
-#define CLEAN   4
+#define BASE   0
+#define BUTTON 1
+#define NAV    2
+#define MOUSE  3
+#define MEDIA  4
+#define NUM    5
+#define SYM    6
+#define FUN    7
 
 &mt {
    tapping-term-ms = <400>;
