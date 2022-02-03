@@ -8,6 +8,18 @@
 #define RAISE   2
 #define CONTROL 3
 #define CLEAN   4
+{
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
 
 &mt {
    tapping-term-ms = <400>;
@@ -20,7 +32,7 @@
 		default_layer {
 			bindings = <
 				&kp Q         &kp W       &kp F         &kp P        &kp B            &kp J   &kp L        &kp U        &kp Y       &kp SEMI
-				&mt LGUI A    &mt LALT R  &mt LCTRL S   &mt LSHIFT T &kp G            &kp M   &mt RSHFT N  &mt RCTRL E  &mt RALT I  &lt RGUI O
+				&hm LGUI A    &hm LALT R  &hm LCTRL S   &hm LSHIFT T &kp G            &kp M   &hm RSHFT N  &hm RCTRL E  &hm RALT I  &hm RGUI O
 				&mt LSHIFT Z  &kp X       &kp C         &kp D        &kp V            &kp K   &kp H        &kp COMMA    &kp DOT     &mt RSHIFT SLASH
                               &kp LEFT       &kp RIGHT                                                     &kp UP       &kp DOWN
                                               &mt LGUI BSPC &mt LCTL ESC           &kp PG_UP &tog CLEAN
