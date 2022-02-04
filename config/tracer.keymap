@@ -109,7 +109,7 @@
 													  &lt FUN DEL &lt NUM BSPC  &lt SYM RET           &kp TAB &lt NAV SPACE  &lt MEDIA ESC
                                             	    &kp TAB  	  &lt NAV SPC           &lt NUM BSPC  &lt SYM RET
 			>;    
-		}
+		};
 
 		
 		
