@@ -71,10 +71,10 @@
 
 		MEDIA {
 			bindings = <
-				&kp Q    &kp W &kp LS(LG(U)) &kp LS(LG(I)) &kp T  &kp Y   &kp U  &kp I    &kp O   &kp UNDER
-				&kp A    &kp LS(LG(LEFT)) &kp LS(LG(J)) &kp LS(LG(K)) &kp LS(LG(RIGHT))  &kp H   &kp J  &kp K    &kp L   &kp SQT
-				&mt LSHIFT Z    &kp X &kp C &kp V &kp B  &kp N   &kp M  &kp COMMA &kp DOT &mt RSHIFT BSLH
-                &kp LEFT &kp RIGHT                   &kp UP &kp DOWN
+				&rgb_ug RGB_SAI    &rgb_ug RGB_HUI    &kp C_VOL_UP       &rgb_ug RGB_EFF    &rgb_ug RGB_TOG    U_NA               U_NA               U_NA               U_NA               &bootloader        \
+&rgb_ug RGB_BRI    &kp C_PREV         &kp C_VOL_DN       &kp C_NEXT         &out OUT_TOG       U_NA               &kp LSHFT          &kp LCTRL          &kp LALT           &kp LGUI           \
+&bt BT_SEL 0       &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3       &bt BT_CLR         U_NA               U_NA               U_NA               &kp RALT           U_NA               \
+U_NP               U_NP               &kp C_MUTE         &kp C_PP           &kp C_STOP         U_NA               U_NA               U_NA               U_NP               U_NP
                       &mt LGUI BSPC &mt LCTL ESC         &kp PG_UP &bt BT_CLR
                         &mt LCTL ENTER &mt RGUI SPACE         &kp PG_DN &mt RCTL ENTER
                         &kp X &kp Y
