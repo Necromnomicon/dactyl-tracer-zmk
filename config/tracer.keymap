@@ -33,7 +33,7 @@
 				&hm LGUI A	&hm LALT R  &hm LCTRL S   &hm LSHIFT T &kp G				&kp M   &hm RSHFT N  &hm RCTRL E  &hm RALT I  &hm RGUI O
 				&lt BUTTON Z &kp X      &kp C         &kp D        &kp V				&kp K   &kp H        &kp COMMA    &kp DOT     &lt BUTTON SLASH
                             &kp LEFT    &kp RIGHT                                                            &kp UP       &kp DOWN
-                                        &lt FUN DEL &lt NUM BSPC  &lt SYM RET           &kp TAB &lt NAV SPC  &lt MEDIA ESC
+                                        &lt FUN DEL &lt NUM BSPC  &lt SYM RET           &kp TAB &lt NAV SPACE  &lt MEDIA ESC
                                             	    &kp TAB  	  &lt NAV SPC           &lt NUM BSPC  &lt SYM RET
 			>;
 
@@ -41,9 +41,9 @@
 
 		button {
 			bindings = <
-				K_UNDO		K_CUT		K_COPY		K_PASTE		K_REDO				K_REDO		K_PASTE		K_COPY		K_CUT		K_UNDO
+				&kp K_UNDO		&kp K_CUT		&kp K_COPY		&kp K_PASTE		&kp K_REDO				&kp K_REDO		&kp K_PASTE		&kp K_COPY		&kp K_CUT		&kp K_UNDO
 				&kp LGUI	&kp LALT	&kp LCTRL   &kp LSHFT   &none               &none       &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI	
-				K_UNDO		K_CUT		K_COPY		K_PASTE		K_REDO              K_REDO		K_PASTE		K_COPY		K_CUT		K_UNDO 	 
+				&kp K_UNDO		&kp K_CUT		&kp K_COPY		&kp K_PASTE		&kp K_REDO             &kp K_REDO		&kp K_PASTE		&kp K_COPY		&kp K_CUT		&kp K_UNDO 	 
 					        &none       &none              												    &none		&none             	
 						    			&none       &none		&none             	&none		&none		&none
 													&none		&none              	&none	    &none
@@ -54,9 +54,9 @@
 			bindings = <
 				&kp PG_UP   &kp HOME      &kp UP        &kp END      &kp INS            &none   &none       &none       &none		&bootloader
 				&kp PG_DN   &kp LEFT      &kp DOWN      &kp RIGHT    &kp CAPS           &none   &kp LSHFT	&kp LCTRL   &kp LALT    &kp LGUI  
-				K_UNDO      K_CUT         K_COPY         K_PASTE     K_REDO             &none   &none       &none       &kp RALT  	&none
+				&kp K_UNDO      &kp K_CUT         &kp K_COPY         &kp K_PASTE     &kp K_REDO             &none   &none       &none       &kp RALT  	&none
 							&kp LEFT       &kp RIGHT                                                        &kp UP      &kp DOWN
-							               &lt FUN DEL &lt NUM BSPC  &lt SYM RET        &kp TAB &lt NAV SPC &lt MEDIA ESC
+							               &lt FUN DEL &lt NUM BSPC  &lt SYM RET        &kp TAB &lt NAV SPACE &lt MEDIA ESC
                                                        &kp TAB       &lt NAV SPC        &lt NUM BSPC  &lt SYM RET
 																																				
 			>;
@@ -94,7 +94,7 @@
 				&kp LGUI           &kp LALT           &kp LCTRL          &kp LSHFT			&none               &kp SLCK           &kp F4             &kp F5             &kp F6             &kp F11
 				&none              &kp RALT           &none              &none				&none               &kp PAUSE_BREAK    &kp F1             &kp F2             &kp F3             &kp F10   
 					               &kp LEFT			  &kp RIGHT                                                    				                      &kp UP    	     &kp DOWN
-													  &none               &none               &none               &kp TAB          &kp SPC            5&kp K_APP
+													  &none               &none               &none               &kp TAB          &kp SPACE          5&kp K_APP
  																		  &kp LEFT		      &kp RIGHT           &kp UP           &kp DOWN
 			>;    
 		}
