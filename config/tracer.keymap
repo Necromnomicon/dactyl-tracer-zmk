@@ -23,7 +23,6 @@
             bindings = <&kp>,  <&kp>;
         };
     };
-
 	keymap {
 		compatible = "zmk,keymap";
 
@@ -39,7 +38,7 @@
 
 		};
 
-		button {
+		button_layer {
 			bindings = <
 				&kp K_UNDO		&kp K_CUT		&kp K_COPY		&kp K_PASTE		&kp K_REDO				&kp K_REDO		&kp K_PASTE		&kp K_COPY		&kp K_CUT		&kp K_UNDO
 				&kp LGUI	&kp LALT	&kp LCTRL   &kp LSHFT   &none               &none       &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI	
@@ -50,7 +49,7 @@
 			>;    
 		}
 
-		nav {
+		nav_layer {
 			bindings = <
 				&kp PG_UP   &kp HOME      &kp UP        &kp END      &kp INS            &none   &none       &none       &none		&bootloader
 				&kp PG_DN   &kp LEFT      &kp DOWN      &kp RIGHT    &kp CAPS           &none   &kp LSHFT	&kp LCTRL   &kp LALT    &kp LGUI  
@@ -63,9 +62,9 @@
 
 		};
 
-		media {
+		media_layer {
 			bindings = <
-				&none		&none 		&kp C_VOL_UP		&none		&none					&none		&none		&none		&none		&bootloader	
+				&none		&none 		&kp C_VOL_UP		&none		&out OUT_TOG					&none		&none		&none		&none		&bootloader	
 				&none 		&kp C_PREV  &kp C_VOL_DN		&kp C_NEXT	&none       		&none		&kp LSHFT	&kp LCTRL	&kp LALT	&kp LGUI
 				&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2		&bt BT_SEL 3 &bt BT_CLR				&none		&none		&none		&kp RALT	&none
 							 &none		&none																		&none		&none              	
@@ -76,25 +75,37 @@
 
 		};
 
-        sym {
+		num_layer {
 			bindings = <
-				&bootloader		&none		&none		&none		&none				&kp LBRC		&kp AMPS		&kp ASTRK		&kp LPAR		&kp RBRC
-				&kp LGUI		&kp LALT	&kp LCTRL	&kp LSHFT	&none               &kp PLUS		&kp DLLR		&kp PRCT		&kp CRRT		&kp COLON 
-				&none			&kp RALT	&none		&none		&none               &kp PIPE		&kp EXCL		&kp AT			&kp HASH		&kp TILDE  
+				&bootloader    &none              &none              &none              &none             &kp LBKT          &kp N7         &kp N8          &kp N9         &kp RBKT
+&kp LGUI       &kp LALT          &kp LCTRL         &kp LSHFT         &none              &kp EQL           &kp N4         &kp N5         &kp N6         &kp SEMI
+&none             &kp RALT          &none   &none              &none                    &kp BSLH          &kp N1         &kp N2         &kp N3         &kp GRAVE  
 								&kp LEFT	&kp RIGHT																	&kp UP    	    &kp DOWN
-                                			&none		&none		&none       		&kp UNDER		&kp LPAR		&kp RPAR
+                                			&none		&none		&none       		&kp MINUS       &kp N0         &kp DOT
 								   					    &none		&none				&kp LBRC		&kp RBRC
 	            >;
 
 		};
 
-		fun {
+        sym_layer {
 			bindings = <
-				&bootloader        &none              &none              &none				&none               &kp PSCRN          &kp F7             &kp F8             &kp F9             &kp F12			
+				&bootloader		&none		&none		&none		&none				&kp LBRC		&kp AMPS		&kp ASTRK		&kp LPAR		&kp RBRC
+				&kp LGUI		&kp LALT	&kp LCTRL	&kp LSHFT	&none               &kp PLUS		&kp DLLR		&kp PRCNT		&kp CARET		&kp COLON 
+				&none			&kp RALT	&none		&none		&none               &kp PIPE		&kp EXCL		&kp AT			&kp HASH		&kp TILDE  
+								&kp LEFT	&kp RIGHT																	&kp UP    	    &kp DOWN
+                                			&none		&none		&none       		&kp UNDER		&kp LPAR		&kp RPAR
+								   					    &none		&none				&kp LBRC		&kp RBRC 
+	            >;
+
+		};
+
+		fun_layer {
+			bindings = <
+				&bootloader        &none              &none              &none				&none               &kp PSCRN         &kp F7             &kp F8             &kp F9             &kp F12			
 				&kp LGUI           &kp LALT           &kp LCTRL          &kp LSHFT			&none               &kp SLCK           &kp F4             &kp F5             &kp F6             &kp F11
 				&none              &kp RALT           &none              &none				&none               &kp PAUSE_BREAK    &kp F1             &kp F2             &kp F3             &kp F10   
 					               &kp LEFT			  &kp RIGHT                                                    				                      &kp UP    	     &kp DOWN
-													  &none               &none               &none               &kp TAB          &kp SPACE          5&kp K_APP
+													  &none               &none               &none               &kp TAB          &kp SPACE          &kp K_APP
  																		  &kp LEFT		      &kp RIGHT           &kp UP           &kp DOWN
 			>;    
 		}
