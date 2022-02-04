@@ -32,7 +32,7 @@
 	keymap {
 		compatible = "zmk,keymap";
 
-		DEFAULT {
+		default_layer {
 			bindings = <
 				&kp Q		&kp W       &kp F         &kp P        &kp B				&kp J   &kp L        &kp U        &kp Y       &kp SEMI
 				&hm LGUI A	&hm LALT R  &hm LCTRL S   &hm LSHIFT T &kp G				&kp M   &hm RSHFT N  &hm RCTRL E  &hm RALT I  &hm RGUI O
@@ -44,7 +44,18 @@
 
 		};
 
-		NAV {
+		button {
+			bindings = <
+			U_UND              U_CUT              U_CPY              U_PST              U_RDO              U_RDO              U_PST              U_CPY              U_CUT              U_UND
+			&kp LGUI           &kp LALT           &kp LCTRL          &kp LSHFT          &none              &none              &kp LSHFT          &kp LCTRL          &kp LALT           &kp LGUI	
+			U_UND              U_CUT              U_CPY              U_PST              U_RDO              U_RDO              U_PST              U_CPY              U_CUT              U_UND 	 
+				               U_NA               U_NA              														                     U_NA				U_NA             	
+							   U_BTN2             U_BTN3             U_BTN1             					    		      U_BTN1             U_BTN3             U_BTN2
+												  U_NA               U_NA              										  U_NA			     U_NA
+			>;    
+		}
+
+		nav {
 			bindings = <
 				&kp PG_UP   &kp HOME      &kp UP        &kp END      &kp INS            U_NA   U_NA       U_NA       U_NA          &bootloader
 				&kp PG_DN   &kp LEFT      &kp DOWN      &kp RIGHT    &kp CAPS           U_NA   &kp LSHFT  &kp LCTRL  &kp LALT      &kp LGUI  
@@ -57,7 +68,7 @@
 
 		};
 
-        MOUSE {
+        mouse {
 			bindings = <
 				U_WH_U   U_WH_L		U_MS_U		U_WH_R		U_NU				U_NA		U_NA		U_NA		U_NA		&bootloader
 				U_WH_D   U_MS_L 	U_MS_D		U_MS_R		U_NU				U_NA		&kp LSHFT	&kp LCTRL	&kp LALT	&kp LGUI
@@ -69,7 +80,7 @@
 
 		};
 
-		MEDIA {
+		media {
 			bindings = <
 				U_NA		U_NA 		&kp C_VOL_UP		U_NA		U_NA					U_NA		U_NA		U_NA		U_NA		&bootloader	
 				U_NA 		&kp C_PREV  &kp C_VOL_DN		&kp C_NEXT	&out OUT_TOG       		U_NA		&kp LSHFT	&kp LCTRL	&kp LALT	&kp LGUI
@@ -81,7 +92,7 @@
 
 		};
 
-        SYM {
+        sym {
 			bindings = <
 				&bootloader        U_NA               U_NA               U_NA               U_NA               &kp LBRC           &kp AMPS           &kp ASTRK          &kp LPAR           &kp RBRC
 				&kp LGUI           &kp LALT           &kp LCTRL          &kp LSHFT          U_NA               &kp PLUS           &kp DLLR           &kp PRCT           &kp CRRT           &kp COLON 
@@ -93,7 +104,7 @@
 
 		};
 
-		FUN {
+		fun {
 			bindings = <
 			&bootloader        U_NA               U_NA               U_NA               U_NA               &kp PSCRN          &kp F7             &kp F8             &kp F9             &kp F12			
 			&kp LGUI           &kp LALT           &kp LCTRL          &kp LSHFT          U_NA               &kp SLCK           &kp F4             &kp F5             &kp F6             &kp F11
@@ -104,16 +115,7 @@
 			>;    
 		}
 
-		BUTTON {
-			bindings = <
-			U_UND              U_CUT              U_CPY              U_PST              U_RDO              U_RDO              U_PST              U_CPY              U_CUT              U_UND
-			&kp LGUI           &kp LALT           &kp LCTRL          &kp LSHFT          &none              &none              &kp LSHFT          &kp LCTRL          &kp LALT           &kp LGUI	
-			U_UND              U_CUT              U_CPY              U_PST              U_RDO              U_RDO              U_PST              U_CPY              U_CUT              U_UND 	 
-				               U_NA               U_NA              														                     U_NA				U_NA             	
-							   U_BTN2             U_BTN3             U_BTN1             					    		      U_BTN1             U_BTN3             U_BTN2
-												  U_NA               U_NA              										  U_NA			     U_NA
-			>;    
-		}
+		
 		
 	};
 };
