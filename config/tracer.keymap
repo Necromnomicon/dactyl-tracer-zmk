@@ -34,7 +34,7 @@
 				&kp Q		&kp W       &kp F         &kp P        &kp B				&kp J   &kp L        &kp U        &kp Y       &kp SEMI
 				&hm LGUI A	&hm LALT R  &hm LCTRL S   &hm LSHIFT T &kp G				&kp M   &hm RSHFT N  &hm RCTRL E  &hm RALT I  &hm RGUI O
 				&lt BUTTON Z &kp X      &kp C         &kp D        &kp V				&kp K   &kp H        &kp COMMA    &kp DOT     &lt BUTTON SLASH
-                            &kp LEFT    &kp RIGHT                                                            &kp UP       &kp DOWN
+                            &kp RS(RC(TAB))    &kp RC(TAB)                                                   &kp UP       &kp DOWN
                                         &lt FUN DEL &lt NUM BSPC  &lt SYM RET           &kp TAB &lt NAV SPACE  &lt MEDIA ESC
                                             	    &kp TAB  	  &lt NAV SPC           &lt NUM BSPC  &lt SYM RET
 			>;
@@ -43,9 +43,9 @@
 
 		button_layer {
 			bindings = <
-				&kp K_UNDO	&kp K_CUT	&kp K_COPY	&kp K_PASTE	&kp K_REDO			&kp K_REDO	&kp K_PASTE	&kp K_COPY	&kp K_CUT	&kp K_UNDO
+				&kp RC(Z)	&kp RC(X)	&kp RC(C)	&kp RC(V)	&kp RS(RC(Z))			&kp RS(RC(Z))	&kp RC(V)	&kp RC(C)	&kp RC(X)	&kp RC(Z)
 				&kp LGUI	&kp LALT	&kp LCTRL   &kp LSHFT   &tog GAME           &tog GAME      &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI	
-				&kp K_UNDO	&kp K_CUT	&kp K_COPY	&kp K_PASTE	&kp K_REDO			&kp K_REDO	&kp K_PASTE	&kp K_COPY	&kp K_CUT	&kp K_UNDO 	 
+				&kp RC(Z)	&kp RC(X)	&kp RC(C)	&kp RC(V)	&kp RS(RC(Z))			&kp RS(RC(Z))	&kp RC(V)	&kp RC(C)	&kp RC(X)	&kp RC(Z) 	 
 					        &kp LEFT    &kp RIGHT                                                            &trans     &tog GAME
                                         &lt FUN DEL &lt NUM BSPC  &lt SYM RET           &kp TAB &lt NAV SPACE  &lt MEDIA ESC
                                             	    &kp TAB  	  &lt NAV SPC           &lt NUM BSPC  &lt SYM RET
@@ -55,9 +55,9 @@
 		nav_layer {
 			bindings = <
 				&kp PG_UP   &kp HOME      &kp UP        &kp END      &kp INS            &none   &none       &none       &reset		&bootloader
-				&kp PG_DN   &kp LEFT      &kp DOWN      &kp RIGHT    &kp CAPS           &none   &kp LSHFT	&kp LCTRL   &kp LALT    &kp LGUI  
-				&kp K_UNDO  &kp K_CUT     &kp K_COPY    &kp K_PASTE  &kp K_REDO         &none   &none       &none       &kp RALT  	&none
-							&kp LEFT       &kp RIGHT                                                        &kp UP      &kp DOWN
+				&kp PG_DN   &kp LEFT      &kp DOWN      &kp RIGHT    &caps_word          &none   &kp LSHFT	&kp LCTRL   &kp LALT    &kp LGUI  
+				&kp RC(Z)   &kp RC(X)     &kp RC(C)    &kp RC(V)  &kp RS(RC(Z))         &none   &none       &none       &none  	&none
+							&trans       &kp RC(F)                                                        &kp UP      &kp DOWN
 							               &lt FUN DEL &lt NUM BSPC  &lt SYM RET        &kp TAB &lt NAV SPACE &lt MEDIA ESC
                                                        &kp TAB       &lt NAV SPC        &lt NUM BSPC  &lt SYM RET
 																																				
@@ -67,9 +67,9 @@
 
 		media_layer {
 			bindings = <
-				&none		&none 		&kp C_VOL_UP		&none &out OUT_TOG		            &none		&none	&none &reset	&bootloader	
+				&none		&none 		&kp C_VOL_UP		&none &out OUT_TOG		            &none		&none	    &none 		&reset		&bootloader	
 				&none 		&kp C_PREV  &kp C_VOL_DN		&kp C_NEXT	&none       		    &none		&kp LSHFT	&kp LCTRL	&kp LALT	&kp LGUI
-				&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2		&bt BT_SEL 3 &bt BT_CLR				&none		&none		&none		&kp RALT	&none
+				&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2		&bt BT_SEL 3 &bt BT_CLR				&none		&none		&none		&none		&none
 							 &kp LEFT    &kp RIGHT                                                          &kp UP       &kp DOWN              	
 							            &kp C_MUTE &kp C_PP	&kp C_STOP         		&kp TAB &lt NAV SPACE  &lt MEDIA ESC
 										          &kp TAB  	  &lt NAV SPC 			&lt NUM BSPC  &lt SYM RET
