@@ -11,6 +11,8 @@
 #define NUM    4
 #define SYM    5
 #define FUN    6
+#define GAME   7
+#define GMSHFT 8
 
 / {
 	behaviors {
@@ -42,9 +44,9 @@
 		button_layer {
 			bindings = <
 				&kp K_UNDO	&kp K_CUT	&kp K_COPY	&kp K_PASTE	&kp K_REDO			&kp K_REDO	&kp K_PASTE	&kp K_COPY	&kp K_CUT	&kp K_UNDO
-				&kp LGUI	&kp LALT	&kp LCTRL   &kp LSHFT   &none              &none      &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI	
+				&kp LGUI	&kp LALT	&kp LCTRL   &kp LSHFT   &tog GAME           &tog GAME      &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI	
 				&kp K_UNDO	&kp K_CUT	&kp K_COPY	&kp K_PASTE	&kp K_REDO			&kp K_REDO	&kp K_PASTE	&kp K_COPY	&kp K_CUT	&kp K_UNDO 	 
-					        &kp LEFT    &kp RIGHT                                                            &kp UP       &kp DOWN
+					        &kp LEFT    &kp RIGHT                                                            &trans     &tog GAME
                                         &lt FUN DEL &lt NUM BSPC  &lt SYM RET           &kp TAB &lt NAV SPACE  &lt MEDIA ESC
                                             	    &kp TAB  	  &lt NAV SPC           &lt NUM BSPC  &lt SYM RET
 			>;    
@@ -111,7 +113,29 @@
 			>;    
 		};
 
-		
+		game_layer {
+			bindings = <
+			&kp T &kp Q &kp W &kp E &kp R 					&kp Y &kp U &kp I &kp O &kp P
+			&kp G &kp A &kp S &kp D &kp F  					&kp H &kp J &kp K &kp L &kp SEMI
+			&kp B &kp Z	&kp X &kp C &kp V 					&kp N &kp H &kp COMMA &kp DOT &kp SLASH
+				  &kp TAB &kp LALT								  &mo BUTTON &tog GAME
+				  		&mo GMSHFT &kp SPACE &kp LCTRL		&kp RCTRL &kp SPACE &kp TAB
+						  		&kp LSHFT &kp ESC		&kp ESC &kp RSHFT
+			>;
+
+		};
+
+		gmshft_layer {
+			bindings = <
+			&kp N4 &kp N3 &kp W  &kp N1 &kp N2 					&kp Y &kp U &kp I &kp O &kp P
+			&kp N5 &kp A  &kp S  &kp D &kp N6  					&kp H &kp J &kp K &kp L &kp SEMI
+			&kp N7 &kp N8 &kp N9 &kp N0 &kp V 					&kp N &kp H &kp COMMA &kp DOT &kp SLASH
+				  &kp TAB &kp LALT								  &mo BUTTON &tog GAME
+				  		&trans &kp SPACE &kp LCTRL		&kp RCTRL &kp SPACE &kp TAB
+						  		&kp LSHFT &kp ESC		&kp ESC &kp RSHFT
+			>;
+
+		};
 		
 	};
 };
