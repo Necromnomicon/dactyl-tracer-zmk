@@ -31,12 +31,12 @@
 
 		default_layer {
 			bindings = <
-				&kp Q		&kp W       &kp F         &kp P        &kp B				&kp J   &kp L        &kp U        &kp Y       &kp SEMI
+				&kp Q		&kp W       &kp F         &kp P        &kp B				&kp J   &kp L        &kp U        &kp Y       &kp SQT
 				&hm LGUI A	&hm LALT R  &hm LCTRL S   &hm LSHIFT T &kp G				&kp M   &hm RSHFT N  &hm RCTRL E  &hm RALT I  &hm RGUI O
 				&lt BUTTON Z &kp X      &kp C         &kp D        &kp V				&kp K   &kp H        &kp COMMA    &kp DOT     &lt BUTTON SLASH
                             &kp RS(RC(TAB))    &kp RC(TAB)                                                   &kp UP       &kp DOWN
                                         &lt FUN DEL &lt NUM BSPC  &lt SYM RET           &lt FUN TAB &lt NAV SPACE  &lt MEDIA ESC
-                                            	    &lt MEDIA TAB &mo NAV 	            &lt NUM BSPC  &lt SYM RET
+                                            	    &lt NAV TAB &mo MEDIA 	            &lt NUM BSPC  &lt SYM RET
 			>;
 
 		};
@@ -48,7 +48,7 @@
 				&kp RC(Z)	&kp RC(X)	&kp RC(C)	&kp RC(V)	&kp RS(RC(Z))			&kp RS(RC(Z))	&kp RC(V)	&kp RC(C)	&kp RC(X)	&kp RC(Z) 	 
 					        &kp LEFT    &kp RIGHT                                                            &trans     &tog GAME
                                         &lt FUN DEL &lt NUM BSPC  &lt SYM RET           &lt FUN TAB &lt NAV SPACE  &lt MEDIA ESC
-                                            	    &lt MEDIA TAB &mo NAV               &lt NUM BSPC  &lt SYM RET
+                                            	    &lt NAV TAB &mo MEDIA               &lt NUM BSPC  &lt SYM RET
 			>;    
 		};
 
@@ -59,7 +59,7 @@
 				&kp RC(Z)   &kp RC(X)     &kp RC(C)    &kp RC(V)  &kp RS(RC(Z))         &none   &none       &none       &none  	&none
 							&trans       &kp RC(F)                                                        &kp UP      &kp DOWN
 							               &lt FUN DEL &lt NUM BSPC  &lt SYM RET        &lt FUN TAB &lt NAV SPACE &lt MEDIA ESC
-                                                       &lt MEDIA TAB &mo NAV	        &lt NUM BSPC  &lt SYM RET
+                                                       &lt NAV TAB &mo MEDIA	        &lt NUM BSPC  &lt SYM RET
 																																				
 			>;
 
@@ -72,7 +72,7 @@
 				&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2		&bt BT_SEL 3 &bt BT_CLR				&none		&none		&none		&none		&none
 							 &kp LEFT    &kp RIGHT                                                          &kp UP       &kp DOWN              	
 							            &kp C_MUTE &kp C_PP	&kp C_STOP         		&lt FUN TAB &lt NAV SPACE  &lt MEDIA ESC
-										           &lt MEDIA TAB &mo NAV		 		&lt NUM BSPC  &lt SYM RET
+										           &lt NAV TAB &mo MEDIA		 		&lt NUM BSPC  &lt SYM RET
 						
 	            >;
 
@@ -85,7 +85,7 @@
 				&none          &kp RALT		&none   	&none		&none              &kp BSLH          &kp N1         &kp N2         &kp N3         &kp GRAVE  
 							   &kp LEFT	 	&kp RIGHT																	&kp UP    	   &kp DOWN
                                 			&lt FUN DEL &lt NUM BSPC  &lt SYM RET        &kp MINUS       &kp N0         &kp DOT
-								   					    &lt MEDIA TAB &mo NAV			 &kp LBRC		 &kp RBRC
+								   					    &lt NAV TAB &mo MEDIA			 &kp LBRC		 &kp RBRC
 	            >;
 
 		};
@@ -97,7 +97,7 @@
 				&none			&kp RALT	&none		&none		&none               &kp PIPE		&kp EXCL		&kp AT			&kp HASH		&kp TILDE  
 								&kp LEFT	&kp RIGHT																	&kp UP    	    &kp DOWN
                                 			&lt FUN DEL &lt NUM BSPC  &lt SYM RET       		&kp UNDER		&kp LPAR		&kp RPAR
-								   					    &lt MEDIA TAB &mo NAV					&kp LBRC		&kp RBRC 
+								   					    &lt NAV TAB &mo MEDIA					&kp LBRC		&kp RBRC 
 	            >;
 
 		};
@@ -109,7 +109,7 @@
 				&none			&kp RALT	&none		&none		&none               &kp PAUSE_BREAK &kp F1		&kp F2		&kp F3		&kp F10   
 					            &kp LEFT	&kp RIGHT																&kp UP		&kp DOWN
 											&lt FUN DEL &lt NUM BSPC  &lt SYM RET           &lt FUN TAB	&lt NAV SPACE   &lt MEDIA ESC
-                                            	    	&lt MEDIA TAB &mo NAV	            &lt NUM BSPC  &lt SYM RET
+                                            	    	&lt NAV TAB &mo MEDIA	            &lt NUM BSPC  &lt SYM RET
 			>;    
 		};
 
