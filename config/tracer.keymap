@@ -44,7 +44,7 @@
 		button_layer {
 			bindings = <
 				&kp RC(Z)	&kp RC(X)	&kp RC(C)	&kp RC(V)	&kp RS(RC(Z))			&kp RS(RC(Z))	&kp RC(V)	&kp RC(C)	&kp RC(X)	&kp RC(Z)
-				&kp LGUI	&kp LALT	&kp LCTRL   &kp LSHFT   &tog GAME           &tog GAME      &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI	
+				&kp LGUI	&kp LALT	&kp LCTRL   &kp LSHFT   &none           		&none      		&kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI	
 				&kp RC(Z)	&kp RC(X)	&kp RC(C)	&kp RC(V)	&kp RS(RC(Z))			&kp RS(RC(Z))	&kp RC(V)	&kp RC(C)	&kp RC(X)	&kp RC(Z) 	 
 					        &kp LEFT    &kp RIGHT                                                            &trans     &to GAME
                                         &lt FUN DEL &lt NUM BSPC  &lt SYM RET           &lt FUN TAB &lt NAV SPACE  &lt MEDIA ESC
