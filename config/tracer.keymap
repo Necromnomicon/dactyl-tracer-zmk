@@ -115,24 +115,24 @@
 
 		game_layer {
 			bindings = <
-			&kp T &kp Q &kp W &kp E &kp R 					&kp Y &kp U &kp I &kp O &kp P
-			&kp G &kp A &kp S &kp D &kp F  					&kp H &kp J &kp K &kp L &kp SEMI
-			&kp B &kp Z	&kp X &kp C &kp V 					&kp N &kp H &kp COMMA &kp DOT &kp SLASH
-				  &kp TAB &kp LALT								  &mo BUTTON &to DEFAULT
-				  		&mo GMSHFT &kp SPACE &kp LCTRL		&kp RCTRL &kp SPACE &kp TAB
-						  		&kp LSHFT &kp ESC		&kp ESC &kp RSHFT
+			&kp Q &kp W &kp E &kp R &kp T  				        &kp Y &kp U &kp I &kp O &kp P
+			&kp A &kp S &kp D &kp F &kp G   					&kp H &kp J &kp K &kp L &kp SEMI
+			&kp Z &kp X &kp C &kp V &kp B  					    &kp N &kp M &kp COMMA &kp DOT &kp SLASH
+				  &kp LALT &kp TAB								  &mo BUTTON &to DEFAULT
+				  		&lt GMSHFT TAB &kp SPACE &kp LSHFT		&kp DEL  &kp SPACE &kp BSPC
+						  		&kp LCTRL &kp LALT				&kp ESC &kp RSHFT
 			>;
 
 		};
 
 		gmshft_layer {
 			bindings = <
-			&kp N4 &kp N3 &kp W  &kp N1 &kp N2 					&kp F1 &kp F2 &kp F3  &kp F4 &kp F5
-			&kp N5 &kp A  &kp S  &kp D &kp N6  					&kp F6 &kp F7 &kp F8 &kp F9 &kp F10
-			&kp N7 &kp N8 &kp N9 &kp N0 &kp V 					&kp F11 &kp F12 &kp COMMA &kp DOT &kp SLASH
-				  &kp TAB &kp LALT								  &mo BUTTON &to DEFAULT
-				  		&trans &kp SPACE &kp LCTRL		&kp RCTRL &kp SPACE &kp TAB
-						  		&kp LSHFT &kp ESC		&kp ESC &kp RSHFT
+			&kp N6 &kp N7 &kp N8 &kp N9 &kp N0 					&kp F1 &kp F2 &kp F3  &kp F4 &kp F5
+			&kp N1 &kp N2 &kp N3 &kp N4 &kp N5  					&kp F6 &kp F7 &kp F8 &kp F9 &kp F10
+			&kp F1 &kp F2 &kp F3 &kp F4 &kp F5 					&kp F11 &kp F12 &kp COMMA &kp DOT &kp SLASH
+				  &kp F6 &kp F7								  &mo BUTTON &to DEFAULT
+				  		&trans &kp SPACE &kp LSHFT		&kp RCTRL &kp SPACE &kp TAB
+						  		&kp LCTRL &kp LALT		&kp ESC &kp RSHFT
 			>;
 
 		};
